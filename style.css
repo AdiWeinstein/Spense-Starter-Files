@@ -1,0 +1,478 @@
+.body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Cabin", 'Segoe UI';
+
+}
+
+/* ---- header + nav ---- */
+
+header .top-strip {
+    background: black;
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    padding: 7px 0px;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: row;
+
+    padding: 30px 70px;
+
+}
+
+nav .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 280px;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+nav h4 {
+    font-weight: 700;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.spacial-btn {
+    background: black;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+
+}
+
+/* ---- main ---- */
+main {
+    background: rgb(218, 218, 218);
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+
+main img {
+    display: none;
+}
+
+.main-part {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 70px;
+    padding-right: 50%;
+    line-height: 1.5;
+
+    background-image: url(./Assets/Hero\ Image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 94%;
+}
+
+main h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+main ul li {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-bottom: 5px;
+}
+
+main ul svg {
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    gap: 15px;
+}
+
+form input {
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#spacial-btn {
+    background: black;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+/* ---- company ---- */
+
+.company {
+    background-color: white;
+    margin: auto;
+    width: 100%;
+
+
+}
+
+.company ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 60px;
+
+
+}
+
+.company li img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* ---- section b ----*/
+
+.section-b {
+    display: flex;
+    justify-content: center;
+    background: rgb(218, 218, 218);
+    width: 90%;
+    margin: auto;
+
+}
+
+.section-b img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 70px;
+
+
+
+    padding-bottom: 30px;
+    padding-top: 30px;
+    line-height: 1.5;
+
+}
+
+.left h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.left a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* ---- section c ----*/
+
+.section-c {
+    display: flex;
+    width: 90%;
+    margin: auto;
+
+}
+
+.section-c img {
+    width: 50%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 70px;
+
+
+    padding-bottom: 30px;
+    padding-top: 30px;
+    line-height: 1.5;
+
+}
+
+.right h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.right a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* ---- footer ---- */
+
+footer {
+    background: black;
+    color: white;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 150px;
+
+}
+
+.footer-left {
+    width: 25%;
+}
+
+.footer-left p {
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.footer-right li {
+    margin: 10px 0;
+    color: gray
+}
+
+footer h3 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+footer h4 {
+    font-weight: 700;
+}
+
+@media (max-width:1000px) {
+    header .top-strip h4 {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        gap: 30px;
+
+    }
+
+    .footer-left {
+        width: 50%;
+    }
+
+    .section-c {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-c img {
+        width: 80%;
+        order: 1;
+        align-self: center;
+
+    }
+
+    .section-b {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: rgb(218, 218, 218);
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .section-b img {
+        width: 90%;
+        object-fit: fill;
+
+
+    }
+
+    .left {
+        padding: 40px;
+        width: 60%;
+    }
+
+    .company {
+        background-color: white;
+        margin: auto;
+        width: 100%;
+
+
+    }
+
+    .company ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 40px;
+
+
+    }
+
+    .company li img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+
+    .company li:nth-child(n+6) {
+
+        display: none;
+    }
+
+    main img {
+        display: flex;
+        object-fit: contain;
+        margin: 15px;
+        ;
+    }
+
+    .main-part {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 40px;
+
+        line-height: 1.5;
+        background-image: none;
+
+
+    }
+
+    nav .links {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+
+
+    }
+}
+
+@media (max-width:590px) {
+    header h4 {
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 30px 70px;
+    }
+
+    .links ul{
+        /* display: none; */
+        transform: translateX(100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap:20px;
+        
+    }
+
+
+    header .links::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url(./Assets/Hamburger\ Menu.svg);
+      
+    }
+    header .links:hover ul{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px; */
+        transform: translatex(0);
+    }
+
+    .nav+.login{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap:20px;
+       
+    }
+
+    header .links ul{
+        transition: all 300ms;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 50px;
+        color: black;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap:20px; */
+    }
+
+    main h1 {
+        font-size: 40px;
+    }
+
+   
+    .company li:nth-child(n+4) {
+
+        display: none;
+    }
+
+    .company li img {
+        width: 100%;
+    }
+  
+    .section-c img {
+        width: 100%;
+    }
+
+    footer .footer-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .footer-left {
+        width: 85%;
+    }
+
+    footer .footer-right {
+        width: 85%;
+    }
+}
